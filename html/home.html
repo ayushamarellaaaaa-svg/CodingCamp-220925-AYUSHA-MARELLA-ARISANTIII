@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevoU - Website</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar" data-aos="fade-down">
+      <div class="logo" data-aos="fade-right">RevoU</div>
+      <ul class="nav-links" id="nav-links" data-aos="fade-left">
+        <ul class="nav-links" id="nav-links">
+        <li><a href="home.html" class="nav-link active">Home</a></li>
+        <li><a href="profil.html" class="nav-link">Our Profile</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="message-us.html" class="nav-link">Message Us</a></li>
+        </ul>
+
+      </ul>
+      <div class="burger" id="burger" data-aos="fade-left">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div id="particles-js"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1 id="typing-text"></h1>
+      <p data-aos="fade-up" data-aos-delay="200">Website Kami - RevoU</p>
+      <button data-aos="zoom-in" data-aos-delay="400" onclick="scrollToHeadquarter()">
+        ✨ Lihat Selengkapnya
+      </button>
+    </div>
+  </section>
+
+  <!-- Headquarters Section -->
+  <section class="headquarter">
+    <h2 data-aos="fade-up">Our Headquarter</h2>
+    <div class="hq-container">
+      <div class="hq-card" data-aos="flip-left">
+        <div class="circle">🏢</div>
+        <p>Jakarta</p>
+      </div>
+      <div class="hq-card" data-aos="flip-left" data-aos-delay="200">
+        <div class="circle">🏙️</div>
+        <p>Bandung</p>
+      </div>
+      <div class="hq-card" data-aos="flip-left" data-aos-delay="400">
+        <div class="circle">🌉</div>
+        <p>Surabaya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>Created for RevoU © 2025</p>
+  </footer>
+
+  <!-- Library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/home.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,  // durasi animasi
+      once: true,      // animasi hanya sekali muncul
+      mirror: true     // animasi muncul juga saat scroll ke atas
+    });
+  </script>
+</body>
+</html>

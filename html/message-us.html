@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevoU - Message Us</title>
+  <link rel="stylesheet" href="../css/message-us.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar" data-aos="fade-down">
+      <div class="logo" data-aos="fade-right">RevoU</div>
+      <ul class="nav-links" id="nav-links" data-aos="fade-left">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="profil.html" class="nav-link">Our Profile</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="message-us.html" class="nav-link active">Message Us</a></li>
+      </ul>
+      <div class="burger" id="burger" data-aos="fade-left">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner Message -->
+  <section class="banner" id="messageBanner">
+    <div id="particles-js"></div>
+    <div class="banner-content" data-aos="fade-up">
+      <h1 id="typing-text-message"></h1>
+      <p data-aos="fade-up" data-aos-delay="200">Kirim pesan ke tim RevoU</p>
+      <button data-aos="zoom-in" data-aos-delay="400" onclick="scrollToForm()">
+        ✉️ Tulis Pesan
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form" id="contactForm">
+    <h2 data-aos="fade-up">Kirim Pesan Anda</h2>
+    <form data-aos="fade-up" data-aos-delay="200">
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>Created for Revo © 2025</p>
+  </footer>
+
+  <!-- Library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/message-us.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true, mirror: true });
+  </script>
+</body>
+</html>

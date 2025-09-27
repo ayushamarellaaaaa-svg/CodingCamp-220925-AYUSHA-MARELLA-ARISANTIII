@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevoU — Profil</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/profil.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar" data-aos="fade-down">
+      <div class="logo" data-aos="fade-right">RevoU</div>
+      <ul class="nav-links" id="nav-links" data-aos="fade-left">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="profil.html" class="nav-link active">Our Profile</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="message-us.html" class="nav-link">Message Us</a></li>
+      </ul>
+      <div class="burger" id="burger" data-aos="fade-left">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner Profil -->
+  <section class="banner" id="profilBanner">
+    <div id="particles-js"></div>
+    <div class="banner-content" data-aos="fade-up">
+      <h1 id="typing-text"></h1>
+      <p data-aos="fade-up" data-aos-delay="200">Profil Kami - RevoU</p>
+      <button data-aos="zoom-in" data-aos-delay="400" onclick="scrollToAbout()">
+        📖 Lihat Tentang Kami
+      </button>
+    </div>
+  </section>
+
+  <!-- Tentang / About -->
+  <section class="about" id="aboutSection">
+    <div class="container">
+      <h2 data-aos="fade-right">Tentang RevoU</h2>
+      <p data-aos="fade-left">
+        RevoU adalah perusahaan yang berfokus pada pengembangan talenta digital melalui program pelatihan dan proyek nyata.  
+        Kami percaya setiap orang bisa berkembang dengan bimbingan yang tepat dan pengalaman praktis.
+      </p>
+
+      <div class="about-cards">
+        <div class="card" data-aos="flip-left">
+          <h3>Nilai Kami</h3>
+          <p>Kreativitas, kolaborasi, dan keberlanjutan adalah dasar dari setiap proyek yang kami jalankan.</p>
+        </div>
+        <div class="card" data-aos="flip-left" data-aos-delay="200">
+          <h3>Visi</h3>
+          <p>Menjadi pusat pengembangan talenta digital yang inklusif dan berdaya saing.</p>
+        </div>
+        <div class="card" data-aos="flip-left" data-aos-delay="400">
+          <h3>Misi</h3>
+          <ul>
+            <li>Menyediakan pengalaman belajar berbasis proyek nyata.</li>
+            <li>Membangun komunitas pembelajar yang suportif.</li>
+            <li>Menghubungkan talenta dengan peluang industri.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>Created for RevoU © 2025</p>
+  </footer>
+
+  <!-- Library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/profil.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+      mirror: true
+    });
+  </script>
+</body>
+</html>

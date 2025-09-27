@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevoU — Portfolio</title>
+  <link rel="stylesheet" href="../css/portfolio.css">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar" data-aos="fade-down">
+      <div class="logo" data-aos="fade-right">RevoU</div>
+      <ul class="nav-links" id="nav-links" data-aos="fade-left">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="profil.html" class="nav-link">Our Profile</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="message-us.html" class="nav-link">Message Us</a></li>
+      </ul>
+      <div class="burger" id="burger" data-aos="fade-left">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+<!-- Banner Portfolio -->
+<section class="banner">
+  <div id="particles-js"></div>
+  <div class="banner-content" data-aos="fade-up">
+    <h1 id="typing-text"></h1> <!-- <- ini untuk Typed.js -->
+    <p data-aos="fade-up" data-aos-delay="200">Portfolio Kami - RevoU</p>
+    <button data-aos="zoom-in" data-aos-delay="400" onclick="scrollToPortfolio()">
+      ✨ Lihat Proyek
+    </button>
+  </div>
+</section>
+
+
+  <!-- Portfolio Grid -->
+  <section class="portfolio" id="portfolioSection">
+    <h2 data-aos="fade-up">Portfolio Saya</h2>
+    <div class="portfolio-container">
+      <div class="portfolio-card" data-aos="flip-left">
+        <img src="../assets/portfolio.jpeg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Website company profile dengan desain minimalis dan responsif</p>
+      </div>
+      <div class="portfolio-card" data-aos="flip-left" data-aos-delay="200">
+        <img src="../assets/portfolio.jpeg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Desain aplikasi mobile yang colorful, user-friendly, dan bikin pengalaman jadi lebih seru</p>
+      </div>
+      <div class="portfolio-card" data-aos="flip-left" data-aos-delay="400">
+        <img src="../assets/portfolio.jpeg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Landing page promosi produk dengan visual menarik serta elemen interaktif.</p>
+      </div>
+      <!-- Tambahkan card lain sesuai kebutuhan -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>Created for RevoU © 2025</p>
+  </footer>
+
+  <!-- Library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/portfolio.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+      mirror: true
+    });
+  </script>
+</body>
+</html>
